@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agência de Viagens</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Navegação principal -->
+  <nav>
+    <ul>
+      <li><a href="#banner">Home</a></li>
+      <li><a href="#tripme">MinhaViagem</a></li>
+      <li><a href="#nosEncontre">Nos Encontre</a></li>
+      <li><a href="#conselhos">Conselhos</a></li>
+    </ul>
+  </nav>
+
+  <!-- Conteúdo principal: Banner e seções -->
+  <main>
+    <!-- Banner com imagem e overlay de texto -->
+    <section id="banner" class="banner">
+      <div class="banner-overlay">
+        <h1>Descubra Destinos Incríveis</h1>
+        <p>Sua próxima aventura começa aqui!</p>
+      </div>
+    </section>
+
+    <!-- Seção TripMe: Apresentação das viagens -->
+<section id="tripme" class="secao">
+  <h2>MinhaViagem - Destinos Incríveis</h2>
+  <p>Escolha entre uma seleção de destinos inesquecíveis. Planeje sua próxima aventura com a gente!</p>
+
+<!-- Destino 1: Paris -->
+  <div class="destino">
+    <img src="imagens/paris.jpg" alt="Paris, França">
+    <h3>Paris, França</h3>
+    <p>Torre Eiffel</p>
+    <a href="#" class="btn-detalhes" onclick="openModal('modal-paris')">Ver detalhes</a>
+  </div>
+
+  <!-- Modal escondido para Paris -->
+  <div id="modal-paris" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('modal-paris')">&times;</span>
+      <h2>Paris, França</h2>
+      <img src="imagens/paris.jpg" alt="Paris, França">
+      <p>Explore os monumentos icônicos e a cultura fascinante da França.</p>
+      <ul>
+        <li>✅ Visite a Torre Eiffel</li>
+        <li>✅ Passeie pelas margens do Rio Sena</li>
+        <li>✅ Experimente a gastronomia francesa</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Card de destino 2 -->
+<div class="destino">
+  <img src="imagens/roma.jpg" alt="Roma, Itália">
+  <h3>Roma, Itália</h3>
+  <p> Coliseu </p>
+  <a href="#" class="btn-detalhes" onclick="openModal('modal-roma')">Ver detalhes</a>
+</div>
+  <!-- Modal escondido para Roma -->
+  <div id="modal-roma" class="modal">
+    <div class="modal-content">
+    <span class="close" onclick="closeModal('modal-roma')">&times;</span>
+    <h2>Roma, Itália</h2>
+    <img src="imagens/roma.jpg" alt="Roma, Itália">
+    <p>Explore os encantos da capital italiana e sua incrível história.</p>
+    <ul>
+      <li>✅ Visite o Coliseu e o Fórum Romano</li>
+      <li>✅ Jogue uma moeda na Fontana di Trevi</li>
+      <li>✅ Experimente uma autêntica pasta italiana</li>
+    </ul>
+  </div>
+</div>
+
+  <!-- Card de destino 3 -->
+<div class="destino">
+  <img src="imagens/tokyo.jpg" alt="Tóquio, Japão">
+  <h3>Tóquio, Japão</h3>
+  <p>cruzamento de Shibuya.</p>
+  <a href="#" class="btn-detalhes" onclick="openModal('modal-tokyo')">Ver detalhes</a>
+</div>
+  <!-- Modal escondido para Tokyo -->
+<div id="modal-tokyo" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('modal-tokyo')">&times;</span>
+    <h2>Tóquio, Japão</h2>
+    <img src="imagens/tokyo.jpg" alt="Tóquio, Japão">
+    <p>Explore os templos tradicionais e a modernidade futurista do Japão.</p>
+    <ul>
+      <li>✅ Visite o famoso cruzamento de Shibuya</li>
+      <li>✅ Descubra as tradições do Templo Senso-ji</li>
+      <li>✅ Experimente sushi fresco no Mercado de Tsukiji</li>
+    </ul>
+  </div>
+</div>
+  <a href="#banner" class="btn-voltar">Voltar ao topo</a>
+</section>
+
+
+    <!-- Seção Nos Encontre: Informações de Contato -->
+<section id="nosEncontre" class="secao">
+  <h2>Nos Encontre</h2>
+  <p>Venha nos visitar ou entre em contato para planejar sua próxima viagem!</p>
+
+  <!-- Informações de contato -->
+  <div class="contato">
+    <p><strong>Endereço:</strong> Rua das Viagens, 123 - Curitiba, PR</p>
+    <p><strong>Telefone:</strong> (41) 99999-9999</p>
+    <p><strong>Email:</strong> contato@agenciadeviagens.com</p>
+  </div>
+
+  <!-- Mapa (pode ser um embed do Google Maps) -->
+  <div class="mapa">
+    <iframe src="https://www.google.com/maps/embed?..."></iframe>
+  </div>
+
+  <!-- Redes sociais -->
+  <div class="redes">
+    <p>Nos siga nas redes sociais:</p>
+    <a href="#" class="btn-social">Facebook</a>
+    <a href="#" class="btn-social">Instagram</a>
+    <a href="#" class="btn-social">Twitter</a>
+  </div>
+
+  <a href="#banner" class="btn-voltar">Voltar ao topo</a>
+</section>
+
+
+    <!-- Seção Conselhos: Dicas de viagem -->
+<section id="conselhos" class="secao">
+  <h2>Conselhos para sua Viagem</h2>
+  <p>Confira dicas essenciais para garantir uma viagem tranquila e inesquecível.</p>
+
+  <!-- Dica 1 -->
+  <div class="conselho">
+    <h3>📌 Planeje com Antecedência</h3>
+    <p>Reserve voos e hospedagens com antecedência para garantir preços melhores e evitar imprevistos.</p>
+  </div>
+
+  <!-- Dica 2 -->
+  <div class="conselho">
+    <h3>💼 Bagagem Inteligente</h3>
+    <p>Leve apenas o necessário e aproveite técnicas como o uso de organizadores para otimizar espaço.</p>
+  </div>
+
+  <!-- Dica 3 -->
+  <div class="conselho">
+    <h3>🌍 Conheça o Destino</h3>
+    <p>Pesquise sobre cultura, clima e principais pontos turísticos para aproveitar melhor a experiência.</p>
+  </div>
+
+  <!-- Dica 4 -->
+  <div class="conselho">
+    <h3>💰 Controle seus Gastos</h3>
+    <p>Defina um orçamento para alimentação, passeios e compras para evitar surpresas.</p>
+  </div>
+
+  <!-- Dica 5 -->
+  <div class="conselho">
+    <h3>📲 Mantenha-se Conectado</h3>
+    <p>Verifique planos de internet para viagem ou use redes Wi-Fi seguras para comunicação.</p>
+  </div>
+
+  <a href="#banner" class="btn-voltar">Voltar ao topo</a>
+</section>
+
+    <section id="banner" class="banner">
+  <div class="banner-overlay">
+    <h1>Bem-vindo à nossa Agência</h1>
+    <p>Explore o encanto dos vilarejos europeus</p>
+  </div>
+</section>
+
+
+  </main>
+
+  <!-- Rodapé -->
+  <footer>
+    <p>© 2025 Agência de Viagens. Todos os direitos reservados.</p>
+  </footer>
+  <!-- JavaScript embutido no final do body -->
+  <script>
+    function openModal(id) {
+      document.getElementById(id).style.display = 'block';
+    }
+
+    function closeModal(id) {
+      document.getElementById(id).style.display = 'none';
+    }
+  </script>
+</body>
+</html>

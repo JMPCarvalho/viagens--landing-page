@@ -1,0 +1,229 @@
+/* Reset e estilo básico */
+html {
+  scroll-padding-top: 40px; /* Ajusta o espaço ao rolar até uma seção */
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Estilização da navegação */
+nav {
+  background-color: #0e0af5;
+  position: fixed; /* Fixa a navegação no topo */
+  width: 100%; /* Garante que cubra toda a largura */
+  top: 0; /* Posiciona no topo da tela */
+  z-index: 1000; /* Mantém a navegação acima de outros elementos */
+}
+
+main {
+  margin-top: 60px; /* Adiciona espaço para compensar o menu fixo */
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  padding: 1rem;
+}
+
+nav ul li {
+  margin: 0 1rem;
+}
+
+nav ul li a {
+  background-color: #444343; /* Cor de fundo para destacar os links */
+  padding: 10px 15px; /* Espaçamento interno */
+  border-radius: 15px; /* Deixa as bordas arredondadas */
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+
+  background-color: #6fa5f7; /* Cor ao passar o mouse */
+}
+
+/* Estilização do banner */
+.banner {
+  background-image: url('../imagens/vilarejo-europeu.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  position: relative;
+}
+
+.banner-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  background-color: rgba(141, 193, 241, 0.5); /* Fundo semitransparente para melhorar a legibilidade */
+  padding: 20px;
+  border-radius: 8px; /* Opcional: deixa as bordas mais suaves */
+}
+
+/* Estilização das seções */
+.secao {
+  padding: 2rem;
+  text-align: center;
+}
+
+.secao h2 {
+  margin-bottom: 1rem;
+}
+
+/* Rodapé */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.btn-voltar {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 15px;
+  background-color: #444; /* Cor de fundo */
+  color: #fff;
+  text-decoration: none;
+  border-radius: 10px; /* Bordas arredondadas */
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn-voltar:hover {
+  background-color: #0c28c5; /* Efeito hover */
+}
+
+.destino {
+  display: inline-block;
+  width: 30%;
+  margin: 10px;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.destino img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.btn-detalhes {
+  display: block;
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #444;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.btn-detalhes:hover {
+  background-color: #FFD700;
+}
+
+.contato, .redes {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.mapa iframe {
+  width: 100%;
+  height: 300px;
+  border-radius: 8px;
+}
+
+.btn-social {
+  display: inline-block;
+  margin: 5px;
+  padding: 10px 15px;
+  background-color: #444;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+}
+
+.btn-social:hover {
+  background-color: #FFD700;
+}
+
+.conselho {
+  background-color: #f9f9f9;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.conselho h3 {
+  color: #444;
+}
+
+.btn-voltar {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 15px;
+  background-color: #444;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+}
+
+.btn-voltar:hover {
+  background-color: #001aff;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  width: 300px;
+  text-align: center;
+}
+
+.modal-content {
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.btn-detalhes {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 15px;
+  background-color: #444;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.btn-detalhes:hover {
+  background-color: #FFD700;
+}
